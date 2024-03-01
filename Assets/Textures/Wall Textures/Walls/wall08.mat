@@ -7,14 +7,15 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: wall07
+  m_Name: wall08
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - _EMISSION
   - _NORMALMAP
   m_InvalidKeywords: []
-  m_LightmapFlags: 5
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -25,7 +26,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 91c295ce3c5f538469d015d9b1cee95b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 852461bbc3b35014c8b2f8749d42a463, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Cube:
@@ -49,7 +50,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 8fb50d9e3172ee144a7d25489bd2d714, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7aa8e2c9188711148ae6b9cb08af4758, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -57,11 +58,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: bc6d9675250da8f4180946a595226993, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6eaf58d6019a35440b046c09d5185149, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 2a92ec3b24546c447ae2a5f5da6f3db8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -71,24 +72,28 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EmissionScaleUI: 0
-    - _Glossiness: 0.322
+    - _GlossMapScale: 1
+    - _Glossiness: 0.15
+    - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
-    - _OcclusionStrength: 0.7
-    - _Parallax: 0.02
+    - _OcclusionStrength: 0.45
+    - _Parallax: 0.023358207
     - _RMS: 0.4088978
     - _ShadeRange: 0.02
-    - _ShadingStrength: 1
-    - _Shininess: 0.82554394
+    - _ShadingStrength: 0.19402985
+    - _Shininess: 0.6763323
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
+    - _Color: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
     - _ReflectColor: {r: 1, g: 1, b: 1, a: 0.5}
-    - _SpecColor: {r: 0.5970149, g: 0.5970149, b: 0.5970149, a: 1}
+    - _SpecColor: {r: 0.3432836, g: 0.3432836, b: 0.3432836, a: 1}
   m_BuildTextureStacks: []
 --- !u!1002 &2100001
 EditorExtensionImpl:

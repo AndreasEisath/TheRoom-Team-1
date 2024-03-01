@@ -7,14 +7,15 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: wall02
+  m_Name: wall17
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - _EMISSION
   - _NORMALMAP
   m_InvalidKeywords: []
-  m_LightmapFlags: 5
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -25,14 +26,22 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 740c2b80bb35f7041a68404e69635409, type: 3}
+        m_Texture: {fileID: 2800000, guid: 69ed653923ac57a429031d56ae679c72, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Cube:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Detail:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailBump:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -49,7 +58,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 84d82b1957e37324d8886cc745758cfb, type: 3}
+        m_Texture: {fileID: 2800000, guid: 61956644621ac6c4eb930c7fb239cc4f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -57,7 +66,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: ae1f381ab9580a64cb74f06d3ba74331, type: 3}
+        m_Texture: {fileID: 2800000, guid: 98c6bb25153abf14d8afe0acbdcb16ed, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
@@ -66,26 +75,35 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AlphaCutRange: 1
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EmissionScaleUI: 0
-    - _Glossiness: 0.207
-    - _Metallic: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.17
+    - _GlossyReflections: 1
+    - _Metallic: 0.158
     - _Mode: 0
-    - _OcclusionStrength: 0.7
-    - _Parallax: 0.0284
-    - _Shininess: 1
+    - _OcclusionStrength: 0.791
+    - _Parallax: 0.042388055
+    - _RMS: 0.20974629
+    - _ShadeRange: 0.02
+    - _ShadingStrength: 0.14925373
+    - _Shininess: 0.27831945
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _UseAlpha: 1
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.91791046, g: 0.91791046, b: 0.91791046, a: 1}
+    - _Color: {r: 0.89705884, g: 0.89705884, b: 0.89705884, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
     - _ReflectColor: {r: 1, g: 1, b: 1, a: 0.5}
-    - _SpecColor: {r: 0.38805968, g: 0.38805968, b: 0.38805968, a: 1}
+    - _SpecColor: {r: 0.1791045, g: 0.1791045, b: 0.1791045, a: 1}
   m_BuildTextureStacks: []
 --- !u!1002 &2100001
 EditorExtensionImpl:
