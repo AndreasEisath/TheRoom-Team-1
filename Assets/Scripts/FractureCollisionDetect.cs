@@ -5,6 +5,7 @@ using UnityEngine;
 public class FractureCollisionDetect : MonoBehaviour
 {
     public float minCollisionForce;
+    public AudioSource Shatter;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,8 @@ public class FractureCollisionDetect : MonoBehaviour
         if (collisionForce >= minCollisionForce)
         {
             GetComponent<Fracture>().CauseFracture();
+            if (Shatter) Shatter.Play();
+            
         }
     }
 }
