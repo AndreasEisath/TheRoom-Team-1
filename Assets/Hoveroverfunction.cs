@@ -15,4 +15,9 @@ public class Hoveroverfunction : MonoBehaviour
     {
         popup.SetActive(false);
     }
+
+    public void HoverToggle()
+    {
+        popup.SetActive(!popup.activeSelf);
+    }
 }
