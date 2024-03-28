@@ -8345,6 +8345,128 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d46fa1eeedbcb0e41b8c735b2594b434, type: 3}
+--- !u!1001 &1560844287
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1395910543205688, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_Name
+      value: BrickDecal08 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.622
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.489
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999882
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.004869508
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.558
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+--- !u!1001 &1576305440
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1395910543205688, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_Name
+      value: BrickDecal08
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.376
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.3904977
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70709944
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.003440636
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.70709735
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0034406348
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.558
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
 --- !u!1 &1631791463
 GameObject:
   m_ObjectHideFlags: 0
@@ -12231,3 +12353,5 @@ SceneRoots:
   - {fileID: 1726240856}
   - {fileID: 981395911}
   - {fileID: 976409362}
+  - {fileID: 1576305440}
+  - {fileID: 1560844287}
