@@ -710,9 +710,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'First aid kit
-
-    Just in case'
+  m_text: "The First Aid kit holds equipment for injuries, hospitals are out of service.
+    \r\n\r\nLes trousses de Premier Soin tiennent des \xE9quipements pour les blessures,
+    les h\xF4pitaux sont hors service. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1166,7 +1166,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A TV to keep up with the most recent news.
+  m_text: "Keep yourself updated with the latest news about autonomous weapons! 
+    \r\n\r\n \rGardez-vous \xE0 jour avec les derni\xE8res actualite\u2019 des armes
+    autonome. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6701,8 +6703,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' These sandbags are to protect the civilians from bullets and the autonomous
-    weapons outside.'
+  m_text: "Sandbags are here to protect you against Gunshots \r\nLes sacs de sable
+    sont l\xE0 pour vous prot\xE9ger des coups de feu! "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10910,7 +10912,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This dog is able to sense the threat of the autonomous weapons
+  m_text: "Dogs can sense the danger easily! Calm the dog down! \r\n\rLes chiens
+    peuvent sentir le danger ais\xE9ment! Calmez le chiens! "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
