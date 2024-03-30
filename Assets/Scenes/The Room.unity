@@ -2600,6 +2600,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popup: {fileID: 937122014}
+--- !u!114 &410386366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410386357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 527e652c6e699024ab074e2c9149ecfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impulseTarget: {fileID: 0}
+  direction: {fileID: 0}
+  force: 1
 --- !u!1 &417954431
 GameObject:
   m_ObjectHideFlags: 0
@@ -3033,17 +3048,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Left stick to move
-
-    Right bottom trigger to interact
-
-
-    Interact
-    or hover over items that have a yellow outline to learn more about them
-
-
-    Press
-    start to continue'
+  m_text: "Left stick to move/ Baton gauche pour bouger\nRight bottom trigger to
+    interact/ \r\nBouton en bas \xE0 droite pour interagir\r\n\nInteract or hover
+    over items that have a yellow outline to learn more about them/ \r\nPassez la
+    souris sur ou interagissez avec les \xE9l\xE9ments comportant un contour jaune
+    pour en savoir plus \xE0 leur sujet.\n\nPress start to continue/ appuyez sur
+    D\xE9marrer pour continuer"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5942,6 +5952,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100048, guid: fcc5ab74cc0e35e4e99f2c4824caffbd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 410386365}
+    - targetCorrespondingSourceObject: {fileID: 100048, guid: fcc5ab74cc0e35e4e99f2c4824caffbd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 410386366}
     - targetCorrespondingSourceObject: {fileID: 100046, guid: fcc5ab74cc0e35e4e99f2c4824caffbd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 976409365}
