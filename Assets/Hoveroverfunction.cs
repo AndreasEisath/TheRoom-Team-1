@@ -8,16 +8,16 @@ public class Hoveroverfunction : MonoBehaviour
         
     public void onhoverstart()
     {
-        popup.SetActive(true);
+        if(popup) popup.SetActive(true);
     }
 
     public void onhoverend()
     {
-        popup.SetActive(false);
+        if(popup) popup.SetActive(false);
     }
 
     public void HoverToggle()
     {
-        popup.SetActive(!popup.activeSelf);
+        if(popup) popup.SetActive(!popup.activeSelf);
     }
 }
