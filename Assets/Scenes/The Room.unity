@@ -2615,6 +2615,21 @@ MonoBehaviour:
   impulseTarget: {fileID: 0}
   direction: {fileID: 0}
   force: 1
+--- !u!114 &410386368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410386357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13de689f40227d548a874b610691d795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subtitle: '[Woof]'
+  subtitledAudio: {fileID: 8300000, guid: 35c5c9daf6be78d4b8488b299ae8e2de, type: 3}
+  subtitleManager: {fileID: 1975444974}
 --- !u!1 &417954431
 GameObject:
   m_ObjectHideFlags: 0
@@ -5955,6 +5970,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100048, guid: fcc5ab74cc0e35e4e99f2c4824caffbd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 410386366}
+    - targetCorrespondingSourceObject: {fileID: 100048, guid: fcc5ab74cc0e35e4e99f2c4824caffbd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 410386368}
     - targetCorrespondingSourceObject: {fileID: 100046, guid: fcc5ab74cc0e35e4e99f2c4824caffbd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 976409365}
@@ -7760,6 +7778,7 @@ MonoBehaviour:
   - This is subtitle one
   - This is subtitle two
   - This is the end of subtitles
+  - post script
   director: {fileID: 0}
 --- !u!114 &1080634206
 MonoBehaviour:
