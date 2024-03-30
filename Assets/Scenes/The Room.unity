@@ -7799,10 +7799,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subtitleManager: {fileID: 1975444974}
   subtitleText:
-  - This is subtitle one
-  - This is subtitle two
-  - This is the end of subtitles
-  - post script
+  - Welcome back fellow listeners.
+  - We bring you more devastating news
+  - Yesterday alone the city saw a record number of accidental deaths from our drones.
+  - Families with disabled children more specifically were spared, they were treated
+    as threats.
+  - 'Funerals aren''t impossible; grief must be done at home. '
+  - The military forces are searching for more victims. Autonomous weapons are uncontrollable;
+    there is no stopping them
+  - 'Stay home, close your windows, your doors, your curtains. Protect your family.
+    Stay safe everyone! '
   director: {fileID: 0}
 --- !u!114 &1080634206
 MonoBehaviour:
