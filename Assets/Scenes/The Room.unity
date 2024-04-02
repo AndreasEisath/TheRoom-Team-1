@@ -7537,15 +7537,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 09f7146695c66af43a235d5ef8a2cb78, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1080634204}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 09f7146695c66af43a235d5ef8a2cb78, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1080634205}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 09f7146695c66af43a235d5ef8a2cb78, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1080634207}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 09f7146695c66af43a235d5ef8a2cb78, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1080634206}
   m_SourcePrefab: {fileID: 100100000, guid: 09f7146695c66af43a235d5ef8a2cb78, type: 3}
 --- !u!4 &1080634188 stripped
 Transform:
@@ -7659,7 +7650,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1080634205}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SubtitleData, Assembly-CSharp
         m_MethodName: ToggleSubtitles
         m_Mode: 1
@@ -7785,82 +7776,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 26476caddb5857c4690ed192867040ef, type: 3}
---- !u!114 &1080634205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1080634189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 417178ee851a2564eb88d1f3dbd46dcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  subtitleManager: {fileID: 1975444974}
-  subtitleText:
-  - Welcome back fellow listeners.
-  - We bring you more devastating news
-  - Yesterday alone the city saw a record number of accidental deaths from our drones.
-  - Families with disabled children more specifically were spared, they were treated
-    as threats.
-  - 'Funerals aren''t impossible; grief must be done at home. '
-  - The military forces are searching for more victims. Autonomous weapons are uncontrollable;
-    there is no stopping them
-  - 'Stay home, close your windows, your doors, your curtains. Protect your family.
-    Stay safe everyone! '
-  director: {fileID: 0}
---- !u!114 &1080634206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1080634189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Events:
-    m_Signals:
-    - {fileID: 11400000, guid: 6d293ac3446b94c47bfa33cc3a9321da, type: 2}
-    m_Events:
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1080634205}
-          m_TargetAssemblyTypeName: SubtitleData, Assembly-CSharp
-          m_MethodName: TickSubtitle
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!320 &1080634207
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1080634189}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 8ae654a21e776f24cb06e2c8573083b2, type: 2}
-  m_InitialState: 0
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 0}
-    value: {fileID: 0}
-  - key: {fileID: -425726066390415275, guid: 8ae654a21e776f24cb06e2c8573083b2, type: 2}
-    value: {fileID: 1080634206}
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &1080839242
 GameObject:
   m_ObjectHideFlags: 0
@@ -12960,6 +12875,9 @@ GameObject:
   - component: {fileID: 1848281465}
   - component: {fileID: 1848281464}
   - component: {fileID: 1848281463}
+  - component: {fileID: 1848281469}
+  - component: {fileID: 1848281468}
+  - component: {fileID: 1848281467}
   m_Layer: 0
   m_Name: News Flash
   m_TagString: Untagged
@@ -13090,6 +13008,82 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1848281461}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1848281467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848281461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 6d293ac3446b94c47bfa33cc3a9321da, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1848281469}
+          m_TargetAssemblyTypeName: SubtitleData, Assembly-CSharp
+          m_MethodName: TickSubtitle
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!320 &1848281468
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848281461}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 8ae654a21e776f24cb06e2c8573083b2, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 0}
+    value: {fileID: 0}
+  - key: {fileID: -425726066390415275, guid: 8ae654a21e776f24cb06e2c8573083b2, type: 2}
+    value: {fileID: 1848281467}
+  m_ExposedReferences:
+    m_References: []
+--- !u!114 &1848281469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848281461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 417178ee851a2564eb88d1f3dbd46dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subtitleManager: {fileID: 1975444974}
+  subtitleText:
+  - Welcome back fellow listeners.
+  - We bring you more devastating news
+  - Yesterday alone the city saw a record number of accidental deaths from our drones.
+  - Families with disabled children more specifically were spared, they were treated
+    as threats.
+  - 'Funerals aren''t impossible; grief must be done at home. '
+  - The military forces are searching for more victims. Autonomous weapons are uncontrollable;
+    there is no stopping them
+  - 'Stay home, close your windows, your doors, your curtains. Protect your family.
+    Stay safe everyone! '
+  director: {fileID: 1848281468}
 --- !u!1001 &1879103784
 PrefabInstance:
   m_ObjectHideFlags: 0
