@@ -3113,7 +3113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13de689f40227d548a874b610691d795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  subtitle: '[Woof]'
+  subtitle: '[Dog whining / le chien pleure]'
   subtitledAudio: {fileID: 8300000, guid: 35c5c9daf6be78d4b8488b299ae8e2de, type: 3}
   subtitleManager: {fileID: 1975444974}
 --- !u!114 &410386370
