@@ -2800,6 +2800,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7578344379155021524, guid: 1b428e366487244448eec04f14964eef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 892130293}
+    - targetCorrespondingSourceObject: {fileID: 7578344379155021524, guid: 1b428e366487244448eec04f14964eef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 892130297}
+    - targetCorrespondingSourceObject: {fileID: 7578344379155021524, guid: 1b428e366487244448eec04f14964eef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 892130296}
   m_SourcePrefab: {fileID: 100100000, guid: 1b428e366487244448eec04f14964eef, type: 3}
 --- !u!1 &410386357 stripped
 GameObject:
@@ -2826,7 +2832,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410386357}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
   m_Name: 
@@ -2906,13 +2912,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OneShotSubtitleData, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 410386360}
+        m_TargetAssemblyTypeName: ToggleAudio, Assembly-CSharp
+        m_MethodName: StartStopAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2920,7 +2926,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 410386370}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -3083,21 +3101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popup: {fileID: 937122014}
---- !u!114 &410386366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410386357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 527e652c6e699024ab074e2c9149ecfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  impulseTarget: {fileID: 0}
-  direction: {fileID: 0}
-  force: 1
 --- !u!114 &410386368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3105,7 +3108,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410386357}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13de689f40227d548a874b610691d795, type: 3}
   m_Name: 
@@ -3113,6 +3116,24 @@ MonoBehaviour:
   subtitle: '[Woof]'
   subtitledAudio: {fileID: 8300000, guid: 35c5c9daf6be78d4b8488b299ae8e2de, type: 3}
   subtitleManager: {fileID: 1975444974}
+--- !u!114 &410386370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410386357}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 0.81960785, b: 0, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &417954431
 GameObject:
   m_ObjectHideFlags: 0
@@ -6008,8 +6029,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineMode: 1
+  outlineColor: {r: 1, g: 0.81960785, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -6862,10 +6883,34 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 892130297}
+        m_TargetAssemblyTypeName: Hoveroverfunction, Assembly-CSharp
+        m_MethodName: onhoverstart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 892130297}
+        m_TargetAssemblyTypeName: Hoveroverfunction, Assembly-CSharp
+        m_MethodName: onhoverend
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -6994,6 +7039,145 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &892130296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892130272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 892130297}
+        m_TargetAssemblyTypeName: Hoveroverfunction, Assembly-CSharp
+        m_MethodName: onhoverstart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 892130297}
+        m_TargetAssemblyTypeName: Hoveroverfunction, Assembly-CSharp
+        m_MethodName: onhoverend
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &892130297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892130272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a6b2cd15077cb6488e1e496899b79b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popup: {fileID: 126585490}
 --- !u!1 &902345614
 GameObject:
   m_ObjectHideFlags: 0
@@ -7158,7 +7342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
+  outlineMode: 1
   outlineColor: {r: 1, g: 0.81960785, b: 0, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
@@ -7374,6 +7558,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100000, guid: fcc5ab74cc0e35e4e99f2c4824caffbd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100046, guid: fcc5ab74cc0e35e4e99f2c4824caffbd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 100048, guid: fcc5ab74cc0e35e4e99f2c4824caffbd, type: 3}
       propertyPath: m_Name
       value: Husky_RM
@@ -7435,6 +7627,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: fcc5ab74cc0e35e4e99f2c4824caffbd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: fcc5ab74cc0e35e4e99f2c4824caffbd, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 4a61021183c6f6f429da2286bce1921e, type: 2}
@@ -7463,10 +7659,10 @@ PrefabInstance:
       addedObject: {fileID: 410386365}
     - targetCorrespondingSourceObject: {fileID: 100048, guid: fcc5ab74cc0e35e4e99f2c4824caffbd, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 410386366}
+      addedObject: {fileID: 410386368}
     - targetCorrespondingSourceObject: {fileID: 100048, guid: fcc5ab74cc0e35e4e99f2c4824caffbd, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 410386368}
+      addedObject: {fileID: 410386370}
     - targetCorrespondingSourceObject: {fileID: 100046, guid: fcc5ab74cc0e35e4e99f2c4824caffbd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 976409365}
@@ -7527,7 +7723,7 @@ MonoBehaviour:
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 410386365}
+      - m_Target: {fileID: 976409374}
         m_TargetAssemblyTypeName: Hoveroverfunction, Assembly-CSharp
         m_MethodName: onhoverstart
         m_Mode: 1
@@ -7542,7 +7738,7 @@ MonoBehaviour:
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 410386365}
+      - m_Target: {fileID: 976409374}
         m_TargetAssemblyTypeName: Hoveroverfunction, Assembly-CSharp
         m_MethodName: onhoverend
         m_Mode: 1
@@ -7563,7 +7759,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 410386360}
+      - m_Target: {fileID: 976409368}
         m_TargetAssemblyTypeName: ToggleAudio, Assembly-CSharp
         m_MethodName: StartStopAudio
         m_Mode: 1
@@ -7746,7 +7942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa952968ef2fed4b8aba3f1275563e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 410386362}
+  audioSource: {fileID: 976409367}
 --- !u!114 &976409371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11330,7 +11526,7 @@ Transform:
   m_GameObject: {fileID: 1397323450}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.247, y: 0, z: 0.143}
+  m_LocalPosition: {x: -0.39, y: 0, z: 0.464}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11364,7 +11560,6 @@ GameObject:
   - component: {fileID: 1417234869}
   - component: {fileID: 1417234868}
   - component: {fileID: 1417234867}
-  - component: {fileID: 1417234871}
   - component: {fileID: 1417234873}
   - component: {fileID: 1417234872}
   m_Layer: 0
@@ -11464,24 +11659,6 @@ Transform:
   - {fileID: 174518037}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 90}
---- !u!114 &1417234871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417234866}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 1
-  outlineColor: {r: 1, g: 0.81960785, b: 0, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!114 &1417234872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15534,7 +15711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   impulseTarget: {fileID: 892130274}
   direction: {fileID: 1397323450}
-  force: 10
+  force: 50
 --- !u!1 &1946799926
 GameObject:
   m_ObjectHideFlags: 0
@@ -16275,6 +16452,7 @@ GameObject:
   - component: {fileID: 2061418877}
   - component: {fileID: 2061418879}
   - component: {fileID: 2061418878}
+  - component: {fileID: 2061418880}
   m_Layer: 0
   m_Name: GlassContainer
   m_TagString: Untagged
@@ -16536,6 +16714,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popup: {fileID: 126585490}
+--- !u!114 &2061418880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061418873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.81960785, b: 0, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &2064180036 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4600643928320452, guid: 5142565cf1b1905429cea5c1257219a0, type: 3}
@@ -16617,6 +16813,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1216589781}
     m_Modifications:
+    - target: {fileID: 3034037112890738856, guid: 346f34cdf795d37449266e32685f819b, type: 3}
+      propertyPath: outlineMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4542681186465736559, guid: 346f34cdf795d37449266e32685f819b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.58
